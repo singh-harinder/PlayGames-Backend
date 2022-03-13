@@ -5,7 +5,9 @@
   "author": "Harinder Singh",
   "license": "MIT",
   "scripts": {
-    "dev": "keystone-next"
+    "dev": "keystone-next",
+    "start": "keystone-next start",
+    "build": "keystone-next build"
   },
   "eslintConfig": {
     "extends": "wesbos/typescript.js",

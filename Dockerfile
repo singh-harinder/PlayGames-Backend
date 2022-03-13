@@ -1,6 +1,6 @@
 FROM node:lts
 
-EXPOSE 3000
+EXPOSE 8080
 
 ARG FRONTEND_URL
 ARG COOKIE_SECRET
@@ -17,9 +17,9 @@ ARG MAIL_PASS
 RUN mkdir /app && chown -R node:node /app
 WORKDIR /app
 COPY --chown=node:node package.json package-lock.json ./
-RUN npm install
+RUN npm ci --production 
 COPY --chown=node:node . .
 
-# RUN npm run deploy
+RUN npm run build
 
-CMD ["npm", "run", "dev"]
+CMD ["./node_modules/.bin/keystone-next",  "start"]
