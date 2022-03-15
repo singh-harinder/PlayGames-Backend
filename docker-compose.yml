@@ -1,8 +1,5 @@
 version: '2.4'
 services:
-  nginx:
-    ports:
-      - 80:80
   playgames-backend:
     build: .
     volumes:
@@ -18,5 +15,8 @@ services:
       - STRIPE_SECRET=${STRIPE_SECRET}
       - MAIL_HOST=${MAIL_HOST}
       - MAIL_PORT=${MAIL_PORT}
-      - MAIN_USER =${MAIN_USER}
+      - MAIN_USER=${MAIN_USER}
       - MAIL_PASS=${MAIL_PASS}
+  nginx:
+    ports:
+      - 80:80
