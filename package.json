@@ -72,7 +72,7 @@
     "typescript": "^4.4.4"
   },
   "engines": {
-    "node": "16.0.0"
+    "node": "16.14.0"
   },
   "repository": "https://github.com/wesbos/advanced-react"
 }
