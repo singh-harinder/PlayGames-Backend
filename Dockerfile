@@ -17,7 +17,7 @@ ARG MAIL_PASS
 RUN mkdir /app && chown -R node:node /app
 WORKDIR /app
 COPY --chown=node:node package.json package-lock.json ./
-RUN npm ci --production /
+# RUN npm ci --production /
 COPY --chown=node:node . .
 
 RUN npm run build
