@@ -1,6 +1,6 @@
 # A complete fullstack E-Commerce store **_PlayGames_** that sells games.
 
-url : <https://playgames.quest>
+**URL** : <https://playgames.quest>
 <br/>
 <br/>
 <br/>
