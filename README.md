@@ -4,56 +4,41 @@ url : <https://playgames.quest>
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
 
-## Frontend is written using Nextjs in React typescript with Apollo for caching and the link between frontend and backend.
-<br/>
-Frontend: https://github.com/singh-harinder/PlayGames-Frontend
+**Frontend** is written using Nextjs in React typescript with Apollo for caching and the link between frontend and backend.
 <br/>
 <br/>
+**Frontend**: https://github.com/singh-harinder/PlayGames-Frontend
 <br/>
 <br/>
 <br/>
 
-## TailwindCSS is used to style the website using the utility classes.
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-
-## Backend is written in typescript and headless CMS Keystone is along with the MongoDB database to store the data. 
-<br/>
-<br/>
+**TailwindCSS** is used to style the website using the utility classes.
 <br/>
 <br/>
 <br/>
 
-## Stripe is used to process payments.
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-
-## sendinblue is used to deliver the emails.
-<br/>
-<br/>
+**Backend** is written in typescript and headless CMS Keystone is along with the MongoDB database to store the data. 
 <br/>
 <br/>
 <br/>
 
-## It is deployed on Digital Ocean.
+**Stripe** is used to process payments.
 <br/>
 <br/>
+<br/>
+
+**sendinblue** is used to deliver the emails.
+<br/>
+<br/>
+<br/>
+
+It is deployed on **Digital Ocean**.
 <br/>
 <br/>
 <br/>
 
 Apollo is used for caching. Pagination is there. Cloudinary is the image host for the store.
-<br/>
-<br/>
 <br/>
 <br/>
 <br/>
