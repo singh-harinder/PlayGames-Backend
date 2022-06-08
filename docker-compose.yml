@@ -1,12 +1,9 @@
 version: '3'
 services:
   playgames-backend:
-    build: .
+    restart: always
     ports:
       - "4000:4000"
-    volumes:
-      - ./:/app
-      - /app/node_modules
     environment:
       - COOKIE_SECRET=${COOKIE_SECRET}
       - DATABASE_URL=${DATABASE_URL}
