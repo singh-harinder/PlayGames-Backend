@@ -1,0 +1,18 @@
+version: '3'
+services:
+  playgames-backend:
+    ports:
+      - "4000:4000"
+    environment:
+      - COOKIE_SECRET=${COOKIE_SECRET}
+      - DATABASE_URL=${DATABASE_URL}
+      - FRONTEND_URL=${FRONTEND_URL}
+      - CLOUDINARY_CLOUD_NAME=${CLOUDINARY_CLOUD_NAME}
+      - CLOUDINARY_KEY=${CLOUDINARY_KEY}
+      - CLOUDINARY_SECRET=${CLOUDINARY_SECRET}
+      - STRIPE_SECRET=${STRIPE_SECRET}
+      - MAIL_HOST=${MAIL_HOST}
+      - MAIL_PORT=${MAIL_PORT}
+      - MAIL_USER=${MAIL_USER}
+      - MAIL_PASS=${MAIL_PASS}
+    command: ["./node_modules/.bin/keystone-next", "start"]
