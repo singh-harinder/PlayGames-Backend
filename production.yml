@@ -4,6 +4,7 @@ services:
     ports:
       - "4000:4000"
     environment:
+      - NODE_ENV=production 
       - COOKIE_SECRET=${COOKIE_SECRET}
       - DATABASE_URL=${DATABASE_URL}
       - FRONTEND_URL=${FRONTEND_URL}
