@@ -1,6 +1,12 @@
 version: '3'
 services:
   playgames-backend:
+    build:
+      context: .
+      args:
+        - CLOUDINARY_CLOUD_NAME=${CLOUDINARY_CLOUD_NAME}
+        - CLOUDINARY_KEY=${CLOUDINARY_KEY}
+        - CLOUDINARY_SECRET=${CLOUDINARY_SECRET}
     ports:
       - "4000:4000"
     environment:
@@ -16,4 +22,5 @@ services:
       - MAIL_PORT=${MAIL_PORT}
       - MAIL_USER=${MAIL_USER}
       - MAIL_PASS=${MAIL_PASS}
+      - PORT=${PORT}
     command: ["./node_modules/.bin/keystone-next", "start"]
